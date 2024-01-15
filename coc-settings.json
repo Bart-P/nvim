@@ -1,0 +1,9 @@
+{
+    "coc.preferences.formatOnSave": true,
+    "html.filetypes": ["html", "handlebars", "htmldjango", "blade"],
+    "emmet.includeLanguages": {
+        "blade": "html"
+    },
+    "snippets.ultisnips.pythonPrompt": false,
+    "prettier.tabWidth": 4
+}
