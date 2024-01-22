@@ -80,21 +80,23 @@ return {
 
         -- Telescope global mappings
         local builtin = require('telescope.builtin')
+        local opts = { silent = true }
+        local keys = vim.keymap
 
-        vim.keymap.set('n', '<C-f>', builtin.find_files, {})
-        vim.keymap.set('n', '<C-b>', builtin.buffers, {})
-        vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-        vim.keymap.set('n', '<leader>fo', builtin.oldfiles, {})
-        vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
-        vim.keymap.set('n', '<leader>fs', builtin.grep_string, {})
-        vim.keymap.set('n', '<leader>gr', builtin.live_grep, {})
-        vim.keymap.set('n', '<leader>fr', builtin.lsp_references, {})
-        vim.keymap.set('n', '<leader>fR', builtin.registers, {})
-        vim.keymap.set('n', '<leader>fi', builtin.lsp_implementations, {})
-        vim.keymap.set('n', '<leader>fk', builtin.keymaps, {})
-        vim.keymap.set('n', '<leader>fc', builtin.commands, {})
-        vim.keymap.set('n', '<leader>fj', builtin.jumplist, {})
-        vim.keymap.set('n', '<leader>fq', builtin.quickfix, {})
-        vim.keymap.set('n', '<leader>fm', builtin.marks, {})
+        keys.set('n', '<C-f>', builtin.find_files, opts)
+        keys.set('n', '<C-b>', builtin.buffers, opts)
+        keys.set('n', '<leader>ff', builtin.find_files, opts)
+        keys.set('n', '<leader>fo', builtin.oldfiles, opts)
+        keys.set('n', '<leader>fg', builtin.git_files, opts)
+        keys.set('n', '<leader>fs', builtin.grep_string, opts)
+        keys.set('n', '<leader>gr', builtin.live_grep, opts)
+        keys.set('n', '<leader>fr', builtin.lsp_references, opts)
+        keys.set('n', '<leader>fR', builtin.registers, opts)
+        keys.set('n', '<leader>fi', builtin.lsp_implementations, opts)
+        keys.set('n', '<leader>fk', builtin.keymaps, opts)
+        keys.set('n', '<leader>fc', builtin.commands, opts)
+        keys.set('n', '<leader>fj', builtin.jumplist, opts)
+        keys.set('n', '<leader>fq', builtin.quickfix, opts)
+        keys.set('n', '<leader>fm', builtin.marks, opts)
     end
 }
