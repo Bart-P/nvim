@@ -98,5 +98,6 @@ return {
         keys.set('n', '<leader>fj', builtin.jumplist, opts)
         keys.set('n', '<leader>fq', builtin.quickfix, opts)
         keys.set('n', '<leader>fm', builtin.marks, opts)
+        keys.set('n', '<leader>ft', "<ESC>:TodoTelescope<CR>", opts)
     end
 }
