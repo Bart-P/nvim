@@ -23,3 +23,10 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
+
+-- for Obsidian, if in Vaul "Brain2.0" set conceallevel=2
+if string.match(vim.fn.getcwd(), 'Brain2.0') then
+    vim.opt.conceallevel = 2
+else
+    vim.opt.conceallevel = 0
+end

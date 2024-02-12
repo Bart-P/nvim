@@ -1,5 +1,9 @@
 {
     "coc.preferences.formatOnSave": true,
+    "[markdown]": {
+        "coc.preferences.formatOnSave": false
+    },
+    "coc.preferences.enableMarkdown": false,
     "html.filetypes": ["html", "handlebars", "htmldjango", "blade"],
     "emmet.includeLanguages": {
         "blade": "html"
