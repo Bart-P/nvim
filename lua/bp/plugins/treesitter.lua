@@ -8,7 +8,7 @@ return {
         },
         config = function()
             require 'nvim-treesitter.configs'.setup({
-                ensure_installed = { 'lua', 'php', 'typescript', 'html', 'css', 'json', 'tsx', 'javascript' },
+                ensure_installed = { 'lua', 'php', 'typescript', 'html', 'css', 'styled', 'json', 'tsx', 'javascript' },
                 highlight = { enable = true },
                 incremental_selection = {
                     enable = true,
