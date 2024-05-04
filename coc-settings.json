@@ -1,5 +1,5 @@
 {
-    "coc.preferences.formatOnSave": true,
+    "coc.preferences.formatOnSave": false,
     "[markdown]": {
         "coc.preferences.formatOnSave": false
     },
