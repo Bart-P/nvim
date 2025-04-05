@@ -1,5 +1,4 @@
 require("mason").setup()
-
 require("mason-lspconfig").setup({
 	ensure_installed = {
 		"intelephense", -- PHP
@@ -8,6 +7,9 @@ require("mason-lspconfig").setup({
 		"lua_ls", -- Lua
 		"bashls", -- Bash
 		"pyright", -- Python
+		"html", -- Html
+        "cssls", -- CSS
+        "tailwindcss", -- Tailwind
 	},
 
 	automatic_installation = true,
@@ -20,7 +22,7 @@ local function on_attach(_, bufnr) -- first arg was client, if ever needed
 	require("lsp_signature").on_attach({
 		bind = true,
 		handler_opts = {
-			-- border = "rounded"
+			border = "rounded"
 		},
 		hint_prefix = "",
 		hint_enable = true,
@@ -134,6 +136,24 @@ lspconfig.bashls.setup({
 
 -- Python
 lspconfig.pyright.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- CSS
+lspconfig.cssls.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- HTML
+lspconfig.html.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- Tailwind
+lspconfig.tailwindcss.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })

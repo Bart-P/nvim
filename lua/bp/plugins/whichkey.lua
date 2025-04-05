@@ -2,13 +2,13 @@ return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
 	config = function()
-		local wk = require("which-key")
-		wk.register({
-			["<leader>r"] = { name = "+refactor" },
-			["<leader>c"] = { name = "+code" },
-			["<leader>d"] = { name = "+diagnostic" },
-			["<leader>s"] = { name = "+symbol" },
-			["<leader>f"] = { name = "+find" },
+        local wk = require("which-key")
+		wk.add({
+			{ "<leader>r", group = "refactor" },
+			{ "<leader>c", group = "code" },
+			{ "<leader>d", group = "diagnostic" },
+			{ "<leader>s", group = "symbol" },
+			{ "<leader>f", group = "find" },
 		})
 	end,
 	keys = {

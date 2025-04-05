@@ -24,9 +24,9 @@ return {
                     disable = { 'python' },
                 },
                 folding = { enable = true },
-                autotag = {
-                    enable = true
-                }
+                -- autotag = {
+                --     enable = true
+                -- }
             })
         end,
     },
