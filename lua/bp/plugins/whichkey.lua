@@ -9,6 +9,7 @@ return {
 			{ "<leader>d", group = "diagnostic" },
 			{ "<leader>s", group = "symbol" },
 			{ "<leader>f", group = "find" },
+			{ "<leader>y", group = "yank to system clipboard" },
 		})
 	end,
 	keys = {
